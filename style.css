@@ -1,0 +1,160 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+.login {
+  border: none;
+  outline: none;
+  padding: 1em 3em;
+  cursor: pointer;
+
+  border-radius: 6px;
+  background-color: green;
+  float: right;
+  width: 90%;
+  max-width: 10%;
+  pointer-events: pointer;
+}
+
+.nav {
+  vertical-align: middle;
+  padding: 1em;
+}
+
+hr {
+  width: 110vw;
+  /* padding: 0;
+  margin: 0; */
+  margin-left: -1em;
+}
+
+.heading {
+  display: inline-block;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.artistImg {
+  width: 90%;
+  /* max-width: 90%; */
+
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-grid {
+  display: grid;
+  /* grid-template-columns: repeat(4, 2fr);
+	grid-template-rows: repeat(5, 5vw);
+	s  */
+
+  margin-top: 2em;
+  margin-left: 1em;
+
+  grid-template-columns: auto auto auto auto auto auto;
+
+  column-gap: 0px;
+
+  row-gap: 45px;
+}
+
+.display-name {
+  width: 90%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: -0.3em;
+  /* margin-left: 0.6em; */
+  padding: 0.6em 0em;
+}
+
+.playlist-text {
+  font-size: 1.4em;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+.create-playlist-btn {
+  border: none;
+  outline: none;
+  display: none;
+  padding: 1em 1.2em;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+  text-align: center;
+  background-color: paleturquoise;
+  margin-bottom: 1em;
+}
+
+.playlist-div {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 500px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  .artist-grid {
+    display: grid;
+    /* grid-template-columns: repeat(4, 2fr);
+	grid-template-rows: repeat(5, 5vw);
+	s  */
+
+    margin-top: 2em;
+    margin-left: 1em;
+
+    grid-template-columns: auto auto;
+
+    column-gap: 0px;
+
+    row-gap: 45px;
+  }
+
+  .login {
+    border: none;
+    outline: none;
+    padding: 0.7em 0.5em;
+    border-radius: 6px;
+    background-color: green;
+    float: right;
+    width: 90%;
+    max-width: 25%;
+    pointer-events: pointer;
+  }
+
+  .heading {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-left: -4em;
+  }
+
+  .playlist-text {
+    width: 100%;
+    text-align: center;
+    padding: 0em 2em;
+  }
+
+  .create-playlist-btn {
+    border: none;
+    outline: none;
+    padding: 0.7em 1em;
+    border-radius: 6px;
+    background-color: paleturquoise;
+    margin-bottom: 2em;
+  }
+}
